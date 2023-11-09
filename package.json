@@ -4,9 +4,7 @@
   "description": "notes app backend",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon ./index.mjs",
-    "client":"npm start ./Client"
+    "start":"node ./index.mjs"
   },
   "keywords": [
     "backend"
