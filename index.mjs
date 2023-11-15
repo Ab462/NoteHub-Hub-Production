@@ -12,7 +12,10 @@ dotenv.config();
 
 
 // middlewares
-app.use(cors());
+app.use(cors({
+  origin:"https://filthy-ray-earrings.cyclic.app",
+  credentials:true
+}));
 app.use(express.json());
 app.use(express.static('./build'));
 
