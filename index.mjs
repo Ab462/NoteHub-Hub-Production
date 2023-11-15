@@ -13,7 +13,7 @@ dotenv.config();
 // middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.static('./build'));
+app.use('/',express.static('./build'));
 
 // Available Routes
 app.use("/api/auth", auth);
