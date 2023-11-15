@@ -102,7 +102,8 @@ router.post('/getuser', fetchUser, async (req, res) => {
     res.status(200).send(loggeduser);
 
   } catch (error) {
-    return res.status(500).send('Internal Server Error');
+    console.log(error)
+    return res.status(500).send('Error Occured');
   }
 });
 
